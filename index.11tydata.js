@@ -29,7 +29,7 @@ function authorList(authors) {
 }
 
 module.exports = {
-  name: "Rebecca Boiarsky (nee Peyser)",
+  name: "Rebecca (Peyser) Boiarsky",
   email: "rboiar [at] mit [dot] edu",
   publications: [
     {
