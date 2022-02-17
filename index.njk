@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Tej Chajed (demo)</title>
+    <title>Rebecca (Peyser) Boiarsky</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Tej Chajed is a PhD student at MIT">
+    <meta name="description" content="Rebecca Boiarsky is a PhD student at MIT">
     <link rel="stylesheet" href="{{ 'css/main.css' | url }}">
   </head>
   <body>
@@ -14,17 +14,29 @@
           <td class="bio">
             <h1 class="name center">{{name}}</h1>
             <div class="email center">{{email}}</div>
-            <p>Hello! My name is Tej and I'm a final-year PhD student at MIT
-                working on formal verification.</p>
+            <p> Hello! I'm a 3rd-year PhD student in EECS at MIT,
+                co-advised by David Sontag in MIT CSAIL and Gaddy Getz at the Broad Institute.
+                <br><br>
+                Before starting my PhD, I went to Stern College of Yeshiva University for undergrad, where I majored
+                in Physics and minored in Computer Science (and got an Associates Degree in Judaic studies!)
+                and then studied Biomedical Engineering for my MS at Columbia Engineering.
+                I also worked on the Molecular Profiling team at Regeneron Pharmaceuticals for 2 years,
+                which sparked my fascination with algorithms for genomic data.
+            </p>
           </td>
           <td class="photo">
-            <img src="https://www.chajed.io/assets/portrait.jpg" width="100%" height="100%">
+            <img src="images/headshot.jpg" width="100%" height="100%">
           </td>
         </tr>
       </tbody>
     </table>
+    <hr>
     <h2>Research</h2>
-    I make correct systems software.
+    I am excited about our ability to use machine learning to better understand
+    health and disease, especially in ways that can be impactful for patients.
+    I focus on developing machine learning algorithms that can utilize clinical
+    and genomic data for this purpose, with a particular focus on genomics and cancer.
+    <hr>
     <h2>Publications</h2>
     <ul class="publications">
       {% for pub in publications %}

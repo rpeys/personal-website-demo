@@ -6,16 +6,17 @@
 // lets us flexibly prepare the data and simplifies the template.
 
 // These are my frequent collaborators, so let's use some variables:
-const tej = "Tej Chajed";
-const joe = "Joseph Tassarotti";
-const frans = "Frans Kaashoek";
-const nickolai = "Nickolai Zeldovich";
+const me = "Rebecca Boiarsky";
+const me_maiden_star = "Rebecca Peyser*";
+const me_double = "Rebecca Peyser Boiarsky";
+const david = "David Sontag";
+const gaddy = "Gad Getz";
 
 // authorList generates the HTML for the author list from a JS array
 function authorList(authors) {
   var list = [];
   authors.forEach((name, i) => {
-    if (name == tej) {
+    if (name == me | name == me_double | name == me_maiden_star) {
       name = '<span class="self-author">' + name + "</span>";
     }
     if (i == authors.length - 1) {
@@ -28,25 +29,62 @@ function authorList(authors) {
 }
 
 module.exports = {
-  name: "Tej Chajed",
-  email: "tchajed@mit.edu",
+  name: "Rebecca Boiarsky (nee Peyser)",
+  email: "rboiar [at] mit [dot] edu",
   publications: [
     {
-      title: "GoJournal: a verified, concurrent, crash-safe journaling system",
+      title: "Single Cell Characterization of Myeloma and its Precursor Conditions Reveals Transcriptional Signatures of Early Tumorigenesis",
       authors: authorList([
-        tej,
-        joe,
-        "Mark Theng",
-        "Ralf Jung",
-        frans,
-        nickolai,
+        me,
+        "Nicholas J. Haradhvala",
+        "Jean-Baptiste Alberge",
+        "Romanos Sklavenitis-Pistofidis",
+        "Tarek H. Mouhieddine",
+        "Oksana Zavidij",
+        "Ming-Chieh Shih",
+        "Danielle Firer",
+        "Mendy Miller",
+        "Habib El-Khoury",
+        "Shankara K. Anand",
+        "François Aguet",
+        david,
+        "Irene M. Ghobrial",
+        gaddy,
       ]),
-      conference: "OSDI 2021",
+      conference: "medRxiv, 2022",
     },
     {
-      title: "Verifying concurrent, crash-safe systems with Perennial",
-      authors: authorList([tej, joe, frans, nickolai]),
-      conference: "SOSP 2019",
+      title: "Deep Contextual Clinical Prediction with Reverse Distillation",
+      authors: authorList([
+        "Rohan S Kodialam",
+        me,
+        "Justin Lim",
+        "Neil Dixit",
+        "Aditya Sai",
+        david,
+      ]),
+      conference: "Proceedings of the AAAI Conference on Artificial Intelligence, 2021",
+    },
+    {
+      title: "Defining the activated fibroblast population in lung fibrosis using single-cell sequencing",
+      authors: authorList([
+        me_maiden_star,
+        "Scott MacDonnell*",
+        "Yinglin Gao",
+        "Luis Cheng",
+        "Yong Kim",
+        "Theodore Kaplan",
+        "Qin Ruan",
+        "Yi Wei",
+        "Min Ni",
+        "Christina Adler",
+        "Wen Zhang",
+        "Kishor Devalaraja-Narashimha",
+        "Justin Grindley",
+        "Gabor Halasz",
+        "Lori Morton"
+      ]),
+      conference: "American journal of respiratory cell and molecular biology, 2019"
     },
   ],
 };
