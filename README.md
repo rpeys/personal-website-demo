@@ -101,6 +101,10 @@ running your website - you're just buying a domain that points to their servers.
 
 ### CSAIL
 
+From this repo on your local computer, run `npm run build`. Then, copy the contents of `_site` to the `~/public_html/` directory inside your home directory on an AFS server (like chronos). Walla!
+
+For more details:
+
 Take a look at https://tig.csail.mit.edu/web-services/personal-web-page/.
 
 You'll need to use AFS, so take a look at
